@@ -394,7 +394,7 @@ main p {
   width: 350px;
   height: 580px;
   border-radius: 20px;
-  background-image: url(src/django.jpg);
+  background-image: url(src/Django.jpg);
   background-repeat: no-repeat;
   background-position: center center; 
   background-size: cover;
