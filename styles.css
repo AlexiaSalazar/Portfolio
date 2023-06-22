@@ -311,19 +311,23 @@ main p {
 }
 
 
+
 .card2 {
   width: 350px;
   height: 580px;
   border-radius: 20px;
+  background-image: url(src/Django.jpg);
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover;
   position: relative;
   padding: 1.4rem;
   border: 2px solid #c3c6ce;
   transition: 0.5s ease-out;
-  overflow: hidden;
-  display: flex;
-  place-content: center;
+  overflow: visible;
+  
 }
-
+ 
 .card-details2 {
   color: rgb(238, 229, 229);
   height: 100%;
@@ -331,20 +335,9 @@ main p {
   display: flex;
   place-content: center;
   
+  
 }
-
-.card2 video{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-}
-
+ 
 .card-button2 {
   transform: translate(-50%, 125%);
   width: 60%;
@@ -355,7 +348,6 @@ main p {
   font-size: 1rem;
   padding: .5rem 1rem;
   position: absolute;
-  z-index: 1;
   left: 50%;
   bottom: 0;
   opacity: 0;
@@ -394,7 +386,7 @@ main p {
   width: 350px;
   height: 580px;
   border-radius: 20px;
-  background-image: url(src/Django.jpg);
+  background-image: url(src/autoPY.jpg);
   background-repeat: no-repeat;
   background-position: center center; 
   background-size: cover;
