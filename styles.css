@@ -1,0 +1,459 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Euclid Circular A", "Poppins";
+}
+.subT{
+  font-size: 25px;
+  font-weight: bolder;
+  color: #ddd;
+}
+nav {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li a {
+  display: block;
+  color: #030303;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ddd;
+}
+
+.fa {
+  padding: 5px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+nav li a {
+  font-weight: bold;
+  color: #000000;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+nav li a:hover {
+  background-color: #243236d3;
+}
+
+
+.banner {
+  position: relative;
+}
+
+.banner > header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+  background: rgb(0 0 0 / 30%);
+}
+
+.banner > header img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.banner h2 {
+  margin: 0 0 10px;
+  font-size: 60px;
+  color: rgb(255 255 255 / 80%);
+}
+
+.banner h3 {
+  margin: 0;
+  font-size: 40px;
+  color: rgb(255 255 255 / 60%);
+}
+
+main {
+  padding: 50px 10%;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+main p {
+  margin: 0 0 60px;
+  line-height: 1.5;
+ 
+}
+
+
+.images {
+  display: flex;
+}
+
+.images > img {
+  flex-shrink: 0;
+  width: 65vw;
+  height: auto;
+  filter: grayscale(0.86);
+}
+
+.Contato{
+  text-align: center;
+}
+
+.contact{
+  text-align: center;
+
+}
+
+.whatsapp-button {
+  background: none;
+  border: 0.2rem solid rgb(39, 95, 39);
+  margin-bottom: 6rem;
+  padding: 10px 20px;
+  width: fit-content;
+  color: rgb(39, 95, 39);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  position: relative;
+  transition: 400ms;
+}
+
+.whatsapp-button:hover {
+  color: #fff;
+  background-color: rgb(3, 19, 7);
+  border: 0.2rem solid grey;
+  cursor: pointer;
+}
+
+
+.whatsapp-button::before {
+  content: "";
+  background-image: url('https://cdn.jsdelivr.net/npm/@whatsappbrand/icons@1.1.0/icons/whatsapp.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.wrapper{
+  background: #e0e0e0;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.sessions{
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  display: block;
+}
+.list-Skills{
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #52639b;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.list-Skills:last-child {
+  border: 10px;
+  padding-bottom: 0;
+}
+.list-Skills:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #03103a;
+  box-shadow: 3px 3px 0px #03103a;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+.Skills{
+  color: #2a2839;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  text-align: left;
+
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+}
+
+.card {
+  width: 350px;
+  height: 580px;
+  border-radius: 20px;
+  background-image: url(src/autoPY.jpg);
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover;
+  position: relative;
+  padding: 1.4rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  
+}
+ 
+.card-details {
+  color: rgb(238, 229, 229);
+  height: 100%;
+  gap: .5em;
+  display: flex;
+  place-content: center;
+  
+  
+}
+ 
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #1b1c1d;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+ 
+.text-body {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+ 
+.text-title {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+}
+ 
+ 
+.card:hover {
+  border-color: #1b1c1d;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+}
+ 
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+
+.card2 {
+  width: 350px;
+  height: 580px;
+  border-radius: 20px;
+  position: relative;
+  padding: 1.4rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+  display: flex;
+  place-content: center;
+}
+
+.card-details2 {
+  color: rgb(238, 229, 229);
+  height: 100%;
+  gap: .5em;
+  display: flex;
+  place-content: center;
+  
+}
+
+.card2 video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.card-button2 {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #1b1c1d;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+ 
+.text-body2 {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+ 
+.text-title2 {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+}
+ 
+ 
+.card2:hover {
+  border-color: #1b1c1d;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+}
+ 
+.card2:hover .card-button2 {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+
+.card3 {
+  width: 350px;
+  height: 580px;
+  border-radius: 20px;
+  background-image: url(src/django.jpg);
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover;
+  position: relative;
+  padding: 1.4rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  justify-content: space-between;
+}
+ 
+.card-details3 {
+  color: rgb(238, 229, 229);
+  height: 100%;
+  gap: .5em;
+  display: flex;
+  place-content: center;
+  
+}
+ 
+.card-button3 {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #1b1c1d;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+}
+ 
+.text-body3 {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+ 
+.text-title3 {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+}
+ 
+ 
+.card3:hover {
+  border-color: #1b1c1d;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+}
+ 
+.card3:hover .card-button3 {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}

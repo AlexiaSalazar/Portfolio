@@ -1,0 +1,50 @@
+@media screen and (max-width:767px) {
+    .menu {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-left: 10px;
+    justify-content: flex-start;
+  }
+  
+  .menu.show {
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  } 
+
+  .banner h2{
+    font-size: 28px;
+  }
+  .subT{
+    font-size: 20px;
+  }
+  .Alexia{
+   display: none;
+  }
+
+  .card-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .button1{
+    position: relative;
+    left: auto;
+  }
+  .card-container{
+    display: flex;
+    gap: 30px;
+  }
+  .card1 .card2 .card3{
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+
+
+
+
